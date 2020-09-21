@@ -1,156 +1,134 @@
-<div class="bg-container">
-    <div class="container">
-        <div class="text-center py-5">
-            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt class="ui-w-100 rounded-circle">
-            <div class="col-md-8 col-lg-6 col-xl-5 p-0 mx-auto">
-                <h4 class="font-weight-bold my-4 text-white">John Doe</h4>
-                <div class="text-muted mb-4">
-                    Lorem ipsum dolor sit amet, nibh suavitate qualisque ut nam. Ad harum primis electram duo, porro principes ei has.
-                </div>
-            </div>
+<!doctype html>
+<html lang="en">
 
-            <div class="text-center">
-                <a href="#" class="d-inline-block text-dark">
-                    <strong class="text-white">234</strong>
-                    <span class="text-muted">followers</span>
-                </a>
-                <a href="#" class="d-inline-block text-dark ml-3">
-                    <strong class="text-white">111</strong>
-                    <span class="text-muted">following</span>
-                </a>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <title>Exaple Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+        
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">BUU</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <span data-feather="home"></span> หน้าแรก
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="command.html">
+
+                คำสั่ง
+              </a>
+                        </li>
+
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>รายชื่อทีม</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <!-- <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                ทีม ตัวอย่าง
+              </a>
+            </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="file-text"></span> ทีม 7
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="team1.html">
+                <span data-feather="file-text"></span>
+                ทีม 1
+              </a>
+            </li>
+
+          </ul> -->
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <h2 style="text-align:center">Profile</h2>
+
+                <div class="card">
+                    <img src="images/2.jpg" alt="Chaipawat" style="width:100%">
+                    <h1>Chaipawat J.</h1>
+                    <p class="title">Planning Manager</p>
+                    <p>Burapha University</p>
+                    <div style="margin: 24px 0;">
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <p><button>Contact</button></p>
+                </div>
+            </main>
         </div>
     </div>
-    <hr class="m-0">
 
-    <ul class="nav nav-tabs bg-tabs-content tabs-alt justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link py-4 active" href="#">Posts</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link py-4" href="#">Likes</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link py-4" href="#">Followers</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link py-4" href="#">Following</a>
-        </li>
-    </ul>
+</body>
 
-</div>
-<style>
-    .bg-container {
-        background: #40E0D0;
-    }
-    
-    .bg-tabs-content {
-        background: #20B2AA;
-    }
-    
-    .text-white {
-        color: #fff !important;
-    }
-    
-    .ui-bg-overlay-container,
-    .ui-bg-video-container {
-        position: relative;
-    }
-    
-    .ui-bg-cover {
-        background-color: transparent;
-        background-position: center center;
-        background-size: cover;
-    }
-    
-    .ui-bg-overlay-container .ui-bg-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: block;
-    }
-    
-    .bg-dark {
-        background-color: rgba(24, 28, 33, 0.9) !important;
-    }
-    
-    .opacity-50 {
-        opacity: .5 !important;
-    }
-    
-    .bg-dark {
-        background-color: rgba(24, 28, 33, 0.9) !important;
-    }
-    
-    .ui-bg-overlay-container>*,
-    .ui-bg-video-container>* {
-        position: relative;
-    }
-    
-    @media (min-width: 992px) {
-        .container,
-        .container-fluid {
-            padding-right: 2rem;
-            padding-left: 2rem;
-        }
-    }
-    
-    .media,
-    .media>:not(.media-body),
-    .jumbotron,
-    .card {
-        -ms-flex-negative: 1;
-        flex-shrink: 1;
-    }
-    
-    .d-flex,
-    .d-inline-flex,
-    .media,
-    .media>:not(.media-body),
-    .jumbotron,
-    .card {
-        -ms-flex-negative: 1;
-        flex-shrink: 1;
-    }
-    
-    .ui-w-100 {
-        width: 100px !important;
-        height: auto;
-    }
-    
-    .font-weight-bold {
-        font-weight: 700 !important;
-    }
-    
-    .opacity-75 {
-        opacity: .75 !important;
-    }
-    
-    .tabs-alt.nav-tabs .nav-link.active,
-    .tabs-alt.nav-tabs .nav-link.active:hover,
-    .tabs-alt.nav-tabs .nav-link.active:focus,
-    .tabs-alt>.nav-tabs .nav-link.active,
-    .tabs-alt>.nav-tabs .nav-link.active:hover,
-    .tabs-alt>.nav-tabs .nav-link.active:focus {
-        -webkit-box-shadow: 0 -2px 0 #26B4FF inset;
-        box-shadow: 0 -2px 0 #26B4FF inset;
-    }
-    
-    .nav-tabs:not(.nav-fill):not(.nav-justified) .nav-link,
-    .nav-pills:not(.nav-fill):not(.nav-justified) .nav-link {
-        margin-right: .125rem;
-    }
-    
-    .nav-tabs.tabs-alt .nav-link,
-    .tabs-alt>.nav-tabs .nav-link {
-        border-width: 0 !important;
-        border-radius: 0 !important;
-        background-color: transparent !important;
-    }
-    
-    .nav-tabs .nav-link.active {
-        border-bottom-color: #fff;
-    }
-</style>
+</html>
