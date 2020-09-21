@@ -1,128 +1,189 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset ="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>61160174</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
-    <header>
+<!doctype html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
-        <!-- <div class="name ">
-            Profile
-        </div> -->
-        <div class="title col-12 col-lg-8">
-            <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2 cc_cursor" align:"center">
-                PROFILE
-            </h2>
-        </div>
-       
+<style>
+    @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400";
+body,
+.badgescard,
+.firstinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        <div class="ava">
-            <img src="https://api.sololearn.com/Uploads/Avatars/868188.jpg" alt="avatar" style=""/>
-        </div>    
+html {
+    height: 100%;
+}
 
-    </header>
-    <div class="content">
-        <aside class="info ">
-            <div class="box">
-                <p class="title">
-                    <i class="fa fa-info-circle"></i>Contact
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    min-height: 100%;
+    background: #00bcd4;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.content {
+    position: relative;
+    animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+}
+
+.card {
+    width: 500px;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:after {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 300px;
+    background: cadetblue;
+    position: absolute;
+    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+}
+
+.badgescard {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #00bcd4;
+    color:#fff;
+    width: 480px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+    animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+}
+
+.badgescard span {
+    font-size: 1.6em;
+    margin: 0px 6px;
+    opacity: 0.6;
+}
+
+.firstinfo {
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+}
+
+.firstinfo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.firstinfo .profileinfo {
+    padding: 0px 20px;
+}
+
+.firstinfo .profileinfo h1 {
+    font-size: 1.8em;
+}
+
+.firstinfo .profileinfo h3 {
+    font-size: 1.2em;
+    color: #00bcd4;
+    font-style: italic;
+}
+
+.firstinfo .profileinfo p.bio {
+    padding: 10px 0px;
+    color: #5A5A5A;
+    line-height: 1.2;
+    font-style: initial;
+}
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -500px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}
+</style>
+
+<html>
+    
+    <!-- <button type="button" class="btn btn-secondary" href="team6.html">Secondary</button> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="content">
+    <a href="team6.html" class="fa fa-arrow-left" ></a>
+    <div class="card">
+        <div class="firstinfo"><img src="https://i.ibb.co/mrKbKZv/jeewassa.jpg"/>
+            
+            <div class="profileinfo">
+                <h1>Jeewassa Prasittivej</h1>
+                <h3>Quality Manager</h3>
+                <p class="bio">
+                    NICKNAME : Kim
+                    <br>
+                    BIRTHDAY : 23 May 2000
+                    <br>
+                    ADDRESS : 99 Moo 2 Hadlek, Klongyai, Trat, 23110
+                    <br>
+                    EMAIL : jeewassa.p@gmail.com
                 </p>
-
-
-                <p class="padd-top">
-                    <i class="fa fa-birthday-cake"></i>
-                    2-2-2222
-                </p>
-
-                <p>
-                    <i class="fa fa-phone"></i>
-                    0123456789
-                </p>            
-
-                <p>
-                    <i  class="fa fa-envelope"></i>
-                    qwerty@gmail.com
-                </p>                
-
-                <p>
-                    <i class="fa fa-home"></i>
-                    123 lorem ipsum, 
-                </p>                
-
-            </div> 
-
-            <div class="box">
-
-                <p class="title" >
-                    <i  class="fa fa-asterisk"></i>
-                    Skill
-                </p>
-
-                <p class="padd-top">HTML, CSS</p>
-                <div class="skill">
-
-                    <div class="skill-right r1"></div>
-                </div>
-
-                <p>JavaScript/jQuery</p>
-                <div class="skill">
-
-                    <div class="skill-right r2"></div>
-                </div>
-
-                <p>PHP, SQL</p>
-                <div class="skill">
-
-                    <div class="skill-right r3"></div>
-                </div>
-            </div>  
-
-        </aside>
-
-
-        <section class="main">
-            <div class="box">
-                <p class="title">
-                    <i class="fa fa-graduation-cap"></i>
-                    Education
-                </p>
-                <p class="padd-top">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, maxime obcaecati enim illo dolorem, recusandae eum! Quasi natus quaerat aspernatur hic, maxime necessitatibus, quo voluptatem veritatis excepturi error sit vero deleniti laborum alias, expedita nostrum. Mollitia doloribus voluptates explicabo quidem.
-                </p>
-            </div>  
-
-
-            <div class="box">
-                <p class="title">
-                    <i class="fa fa-flag"></i>
-                    activity
-                </p>
-                <br>
-                <p class="padd-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur rem, perspiciatis aliquam amet asperiores earum vero hic ab, minus veritatis. 
-                </p>
-            </div>  
-
-
-
-            <div>
-                <div class="box">
-                <p class="title">
-                    <i class="fa fa-crosshairs" aria-hidden="true"></i>
-                Career goals
-                </p>
-                <br>
-                <p class="padd-top">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur rem, perspiciatis aliquam amet asperiores earum vero hic ab, minus veritatis. <br>
-                </p>
-            </div>  
+                <!-- <p class="bio"></p> -->
+               
+                
             </div>
-
-        </section>
-
+        </div>
     </div>
-    <footer>    </footer>
-</body>
+    <!-- <div class="badgescard"> 
+
+        
+        <span class="fa fa-facebook" href = "https://www.facebook.com/jawassee.pstv"></span>
+        <span class="fa fa-twitter"> </span>
+        <span class="fa fa-google-plus"></span>
+        <span class="fa fa-youtube"></span>
+        <span class="fa fa-dribble"></span>
+        <span class="fa fa-google"></span>
+        <span class="fa fa-android"> </span>
+        
+    </div> -->
+</div>
+
 </html>
