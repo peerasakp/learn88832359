@@ -1,1 +1,135 @@
-<h1>hello lili</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Exaple Page</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav
+			class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+		>
+			<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">BUU</a>
+			<button
+				class="navbar-toggler position-absolute d-md-none collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#sidebarMenu"
+				aria-controls="sidebarMenu"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav
+					id="sidebarMenu"
+					class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+				>
+					<div class="sidebar-sticky pt-3">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">
+									<span data-feather="home"></span>
+
+									หน้าแรก
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="command.html"> คำสั่ง </a>
+							</li>
+						</ul>
+
+						<h6
+							class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+						>
+							<span>รายชื่อทีม</span>
+							<a
+								class="d-flex align-items-center text-muted"
+								href="#"
+								aria-label="Add a new report"
+							>
+								<span data-feather="plus-circle"></span>
+							</a>
+						</h6>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<span data-feather="file-text"></span>
+									ทีม ตัวอย่าง
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item">
+								<a class="nav-link" href="team2.html">
+									<span data-feather="file-text"></span>
+									ทีม 2
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+					<div class="container">
+						<div class="row my-2">
+							<div class="col-lg-8 order-lg-2">
+								<ul class="nav nav-tabs">
+									<li class="nav-item">
+										<a
+											href=""
+											data-target="#profile"
+											data-toggle="tab"
+											class="nav-link active"
+											>Profile</a
+										>
+									</li>
+								</ul>
+								<div class="tab-content py-4">
+									<div class="tab-pane active" id="profile">
+										<h5 class="mb-3">User Profile</h5>
+										<div class="row">
+											<div class="col-md-6">
+												<h6>About</h6>
+												<p><b>Name</b> : Adithep Phompha</p>
+												<p><b>Student Code</b> : 61160079</p>
+												<p><b>Role</b> : Development manager</p>
+												<h6>Hobbies</h6>
+												<p>
+													Read Novel, Watch Anime, Read Manga, Draw Anime, Read
+													Visual Novel
+												</p>
+											</div>
+										</div>
+										<!--/row-->
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 order-lg-1 text-center">
+								<img
+									src="/Picture/แนะนำบิ๊ก.png"
+									class="mx-auto img-fluid img-circle d-block"
+									alt="avatar"
+								/>
+							</div>
+						</div>
+					</div>
+					<button
+						type="button"
+						class="btn-secondary"
+						onclick="location.href = 'team2.html';"
+					>
+						ย้อนกลับ
+					</button>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
